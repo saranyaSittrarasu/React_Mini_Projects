@@ -30,6 +30,11 @@ const Navbar: React.FC = () => {
             Random Color Generator
           </Link>
         </li>
+        <li>
+          <Link to="/monthanddatecalculator" className={navLinkStyles}>
+            Month and Date Calculator
+          </Link>
+        </li>
       </ul>
     </nav>
   );

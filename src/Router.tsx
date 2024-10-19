@@ -5,6 +5,7 @@ import Accordion from "./components/Accordion/Accordion";
 import LoadMoreData from "./components/LoadMoreData/LoadMoreData";
 import RandomColorGenrator from "./components/RandomColorGenerator/RandomColorGenerator";
 import NotFound from "./components/NotFound";
+import WeekandDaysCalculator from "./components/WeekandDaysCalculator/WeekandDaysCalculator";
 
 const AppRouter: React.FC = () => {
   return (
@@ -14,6 +15,10 @@ const AppRouter: React.FC = () => {
         <Route path="/accordion" element={<Accordion />} />
         <Route path="/loadmoredata" element={<LoadMoreData />} />
         <Route path="/randomcolorgenerator" element={<RandomColorGenrator />} />
+        <Route
+          path="/monthanddatecalculator"
+          element={<WeekandDaysCalculator />}
+        />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>
