@@ -21,8 +21,8 @@ const Navbar: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link to="/loadmoredata" className={navLinkStyles}>
-            Load More Data
+          <Link to="/searchautocomplete" className={navLinkStyles}>
+            Search Auto Complete
           </Link>
         </li>
         <li>
