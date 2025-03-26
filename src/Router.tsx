@@ -6,6 +6,7 @@ import SearchAutoComplete from "./components/SearchAutoComplete/SearchAutoComple
 import RandomColorGenrator from "./components/RandomColorGenerator/RandomColorGenerator";
 import NotFound from "./components/NotFound";
 import WeekandDaysCalculator from "./components/WeekandDaysCalculator/WeekandDaysCalculator";
+import StarRating from "./components/StarRating/StarRating";
 
 const AppRouter: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter: React.FC = () => {
           path="/monthanddatecalculator"
           element={<WeekandDaysCalculator />}
         />
+        <Route path="/starrating" element={<StarRating />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>

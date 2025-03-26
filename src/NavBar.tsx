@@ -35,6 +35,11 @@ const Navbar: React.FC = () => {
             Month and Date Calculator
           </Link>
         </li>
+        <li>
+          <Link to="/starrating" className={navLinkStyles}>
+            Star Rating
+          </Link>
+        </li>
       </ul>
     </nav>
   );
