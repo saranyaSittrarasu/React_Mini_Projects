@@ -7,6 +7,7 @@ import RandomColorGenrator from "./components/RandomColorGenerator/RandomColorGe
 import NotFound from "./components/NotFound";
 import WeekandDaysCalculator from "./components/WeekandDaysCalculator/WeekandDaysCalculator";
 import StarRating from "./components/StarRating/StarRating";
+import ModalHomePage from "./components/ModalPopUp/ModalHomePage";
 
 const AppRouter: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const AppRouter: React.FC = () => {
           element={<WeekandDaysCalculator />}
         />
         <Route path="/starrating" element={<StarRating />} />
+        <Route path="/showmodal" element={<ModalHomePage />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>

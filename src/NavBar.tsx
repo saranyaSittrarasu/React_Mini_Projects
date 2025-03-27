@@ -40,6 +40,11 @@ const Navbar: React.FC = () => {
             Star Rating
           </Link>
         </li>
+        <li>
+          <Link to="/showmodal" className={navLinkStyles}>
+            Modal PopUp
+          </Link>
+        </li>
       </ul>
     </nav>
   );
