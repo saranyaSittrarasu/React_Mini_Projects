@@ -50,6 +50,16 @@ const Navbar: React.FC = () => {
             QR-Code Generator
           </Link>
         </li>
+        <li>
+          <Link to="/imageslider" className={navLinkStyles}>
+            Image Slider
+          </Link>
+        </li>
+        <li>
+          <Link to="/lightdark" className={navLinkStyles}>
+            Light and Dark
+          </Link>
+        </li>
       </ul>
     </nav>
   );
