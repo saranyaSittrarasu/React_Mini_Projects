@@ -8,6 +8,7 @@ import NotFound from "./components/NotFound";
 import WeekandDaysCalculator from "./components/WeekandDaysCalculator/WeekandDaysCalculator";
 import StarRating from "./components/StarRating/StarRating";
 import ModalHomePage from "./components/ModalPopUp/ModalHomePage";
+import QrCoreGenerator from "./components/QRCodeGenerator/QrCoreGenerator";
 
 const AppRouter: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const AppRouter: React.FC = () => {
         />
         <Route path="/starrating" element={<StarRating />} />
         <Route path="/showmodal" element={<ModalHomePage />} />
+        <Route path="/qrcode" element={<QrCoreGenerator />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>

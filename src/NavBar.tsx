@@ -45,6 +45,11 @@ const Navbar: React.FC = () => {
             Modal PopUp
           </Link>
         </li>
+        <li>
+          <Link to="/qrcode" className={navLinkStyles}>
+            QR-Code Generator
+          </Link>
+        </li>
       </ul>
     </nav>
   );
