@@ -60,6 +60,16 @@ const Navbar: React.FC = () => {
             Light and Dark
           </Link>
         </li>
+        <li>
+          <Link to="/customtab" className={navLinkStyles}>
+            Custom Tab
+          </Link>
+        </li>
+        <li>
+          <Link to="/loadmorebutton" className={navLinkStyles}>
+            Load More Button
+          </Link>
+        </li>
       </ul>
     </nav>
   );

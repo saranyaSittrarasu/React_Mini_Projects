@@ -11,6 +11,8 @@ import ModalHomePage from "./components/ModalPopUp/ModalHomePage";
 import QrCoreGenerator from "./components/QRCodeGenerator/QrCoreGenerator";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
 import LightAndDark from "./components/LightAndDark/LightAndDark";
+import CustomTab from "./components/CustomTab/CustomTab";
+import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
 
 const AppRouter: React.FC = () => {
   return (
@@ -29,6 +31,8 @@ const AppRouter: React.FC = () => {
         <Route path="/qrcode" element={<QrCoreGenerator />} />
         <Route path="/imageslider" element={<ImageSlider />} />
         <Route path="/lightdark" element={<LightAndDark />} />
+        <Route path="/customtab" element={<CustomTab />} />
+        <Route path="/loadmorebutton" element={<LoadMoreButton />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>
