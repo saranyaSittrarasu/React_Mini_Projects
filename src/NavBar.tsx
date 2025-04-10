@@ -70,6 +70,11 @@ const Navbar: React.FC = () => {
             Load More Button
           </Link>
         </li>
+        <li>
+          <Link to="/pagination" className={navLinkStyles}>
+            Pagination
+          </Link>
+        </li>
       </ul>
     </nav>
   );

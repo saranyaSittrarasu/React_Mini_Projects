@@ -13,6 +13,7 @@ import ImageSlider from "./components/ImageSlider/ImageSlider";
 import LightAndDark from "./components/LightAndDark/LightAndDark";
 import CustomTab from "./components/CustomTab/CustomTab";
 import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
+import Pagination from "./components/Pagination/Pagination";
 
 const AppRouter: React.FC = () => {
   return (
@@ -33,6 +34,7 @@ const AppRouter: React.FC = () => {
         <Route path="/lightdark" element={<LightAndDark />} />
         <Route path="/customtab" element={<CustomTab />} />
         <Route path="/loadmorebutton" element={<LoadMoreButton />} />
+        <Route path="/pagination" element={<Pagination />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>
