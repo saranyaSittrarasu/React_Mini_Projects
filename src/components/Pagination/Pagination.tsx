@@ -8,7 +8,7 @@ type ImageData = {
 const Pagination = () => {
   const [jsonData, setJsonData] = useState<ImageData[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [pages, setPages] = useState<number[]>([]);
+  //const [pages, setPages] = useState<number[]>([]);
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -16,8 +16,8 @@ const Pagination = () => {
       );
       const data = await response.json();
       setJsonData(data);
-      const pageCount = Math.ceil(data.length / 10);
-      setPages(Array.from({ length: pageCount }, (_, index) => index));
+      // const pageCount = Math.ceil(data.length / 10);
+      // setPages(Array.from({ length: pageCount }, (_, index) => index));
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -70,7 +70,7 @@ const Pagination = () => {
         >
           prev
         </button>
-        {pages.map((_, index) => {
+        {[...Array(Math.ceil(jsonData.length / 10))].map((_, index) => {
           return (
             <button
               key={index}
