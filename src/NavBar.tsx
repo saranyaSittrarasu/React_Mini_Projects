@@ -75,6 +75,11 @@ const Navbar: React.FC = () => {
             Pagination
           </Link>
         </li>
+        <li>
+          <Link to="/digitalclock" className={navLinkStyles}>
+            Digital Clock And Count Timer
+          </Link>
+        </li>
       </ul>
     </nav>
   );

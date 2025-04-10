@@ -14,6 +14,7 @@ import LightAndDark from "./components/LightAndDark/LightAndDark";
 import CustomTab from "./components/CustomTab/CustomTab";
 import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
 import Pagination from "./components/Pagination/Pagination";
+import DigitalClockAndStopWatch from "./components/DigitalClockAndStopWatch/DigitalClockAndStopWatch";
 
 const AppRouter: React.FC = () => {
   return (
@@ -35,6 +36,7 @@ const AppRouter: React.FC = () => {
         <Route path="/customtab" element={<CustomTab />} />
         <Route path="/loadmorebutton" element={<LoadMoreButton />} />
         <Route path="/pagination" element={<Pagination />} />
+        <Route path="/digitalclock" element={<DigitalClockAndStopWatch />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>
