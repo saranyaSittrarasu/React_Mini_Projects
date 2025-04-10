@@ -8,6 +8,9 @@ const DigitalClockAndStopWatch = () => {
     const timer = setInterval(() => {
       setTime(new Date());
     }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+  useEffect(() => {
     const countTimer = setInterval(() => {
       if (isStart) {
         setCount((prevCount) => prevCount + 1);
