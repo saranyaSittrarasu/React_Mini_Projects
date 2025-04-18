@@ -15,6 +15,8 @@ import CustomTab from "./components/CustomTab/CustomTab";
 import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
 import Pagination from "./components/Pagination/Pagination";
 import DigitalClockAndStopWatch from "./components/DigitalClockAndStopWatch/DigitalClockAndStopWatch";
+import FileUpload from "./components/FileUpload/FileUpload";
+import FormValidation from "./components/FormValidation/FormValidation";
 
 const AppRouter: React.FC = () => {
   return (
@@ -37,6 +39,8 @@ const AppRouter: React.FC = () => {
         <Route path="/loadmorebutton" element={<LoadMoreButton />} />
         <Route path="/pagination" element={<Pagination />} />
         <Route path="/digitalclock" element={<DigitalClockAndStopWatch />} />
+        <Route path="/fileupload" element={<FileUpload />} />
+        <Route path="/formvalidator" element={<FormValidation />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>

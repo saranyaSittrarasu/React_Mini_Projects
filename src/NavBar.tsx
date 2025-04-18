@@ -80,6 +80,16 @@ const Navbar: React.FC = () => {
             Digital Clock And Count Timer
           </Link>
         </li>
+        <li>
+          <Link to="/fileupload" className={navLinkStyles}>
+            File Upload and Preview
+          </Link>
+        </li>
+        <li>
+          <Link to="/formvalidator" className={navLinkStyles}>
+            Form Validator
+          </Link>
+        </li>
       </ul>
     </nav>
   );

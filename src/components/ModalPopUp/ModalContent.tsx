@@ -1,10 +1,8 @@
-import React from "react";
-
 interface ModalContentProps {
   onClose: () => void;
 }
 
-const ModalContent: React.FC<ModalContentProps> = ({ onClose }) => {
+const ModalContent = ({ onClose }: ModalContentProps) => {
   return (
     <>
       <div
