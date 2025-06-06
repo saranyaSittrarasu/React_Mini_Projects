@@ -90,6 +90,11 @@ const Navbar: React.FC = () => {
             Form Validator
           </Link>
         </li>
+        <li>
+          <Link to="/dragdrop" className={navLinkStyles}>
+            Drag and Drop
+          </Link>
+        </li>
       </ul>
     </nav>
   );

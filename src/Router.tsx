@@ -17,6 +17,7 @@ import Pagination from "./components/Pagination/Pagination";
 import DigitalClockAndStopWatch from "./components/DigitalClockAndStopWatch/DigitalClockAndStopWatch";
 import FileUpload from "./components/FileUpload/FileUpload";
 import FormValidation from "./components/FormValidation/FormValidation";
+import DragAndDropList from "./components/DragandDrop/DragAndDropList";
 
 const AppRouter: React.FC = () => {
   return (
@@ -41,6 +42,7 @@ const AppRouter: React.FC = () => {
         <Route path="/digitalclock" element={<DigitalClockAndStopWatch />} />
         <Route path="/fileupload" element={<FileUpload />} />
         <Route path="/formvalidator" element={<FormValidation />} />
+        <Route path="/dragdrop" element={<DragAndDropList />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>
