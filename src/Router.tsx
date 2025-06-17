@@ -18,6 +18,7 @@ import DigitalClockAndStopWatch from "./components/DigitalClockAndStopWatch/Digi
 import FileUpload from "./components/FileUpload/FileUpload";
 import FormValidation from "./components/FormValidation/FormValidation";
 import DragAndDropList from "./components/DragandDrop/DragAndDropList";
+import DebounceAndThrottle from "./components/DebounceandThrottle/DebounceAndThrottle";
 
 const AppRouter: React.FC = () => {
   return (
@@ -43,6 +44,7 @@ const AppRouter: React.FC = () => {
         <Route path="/fileupload" element={<FileUpload />} />
         <Route path="/formvalidator" element={<FormValidation />} />
         <Route path="/dragdrop" element={<DragAndDropList />} />
+        <Route path="/debounceandthrottle" element={<DebounceAndThrottle />} />
         <Route path="*" element={<NotFound />} />{" "}
       </Routes>
     </>

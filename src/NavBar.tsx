@@ -95,6 +95,11 @@ const Navbar: React.FC = () => {
             Drag and Drop
           </Link>
         </li>
+        <li>
+          <Link to="/debounceandthrottle" className={navLinkStyles}>
+            Debounce and Throttle
+          </Link>
+        </li>
       </ul>
     </nav>
   );
